@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link  href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Title</a>
+    <ul class="nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="http://localhost:8080/DatabaseApps3/uyekayit.html">Kayıt ol</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+  <form class="form-horizontal"  action="controlServlet" method="post">
+  <div class="control-group" >
+    
+    <label class="control-label" for="inputUsername" ><font size="3" face="Arial" color="white">Kullanıcı Adı</font></label>
+    
+    <div class="controls">
+      <input type="text" id="inputUsername" name="username"   placeholder="Kullanıcı Adı">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPassword"><font size="3" face="Arial" color="white">Parola</font></label>
+    <div class="controls">
+      <input type="password" id="inputPassword"  name="password"  placeholder="Parola">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        <input type="checkbox" name="box1" value="remember"> <font size="3" face="Arial"   color="white">Remember me</font>
+      </label>
+      <button type="submit" class="btn">Sign in</button>
+    </div>
+  </div>
+</form>
+  <script src="http://code.jquery.com/jquery.js"></script>
+    <script   src="js/bootstrap.min.js"></script>
+  </body>
+</html>

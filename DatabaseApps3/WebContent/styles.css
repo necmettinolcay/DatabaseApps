@@ -1,0 +1,19 @@
+body{
+	padding-top:0px;
+	padding-bottom: 20px;
+	background-color:#003333;
+	
+}
+.form-horizontal{
+	margin-left:300px;
+}
+.hero-unit{
+	background-image:url(./pirlo.jpg);
+	height:150px;
+	background-repeat:no-repeat;
+	
+}
+.td{
+	font-size:3px;
+	font-color:#000000;
+}

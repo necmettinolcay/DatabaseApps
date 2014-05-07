@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link  href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Title</a>
+    <ul class="nav">
+      <li class="active"><a href="http://localhost:8080/DatabaseApps3/login.html">Home</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Jobs</a></li>
+    </ul>
+  </div>
+</div>
+
+  <form class="form-horizontal"  action="UploadServlet" method="post" enctype="multipart/form-data">
+  <div class="control-group" >
+    
+    <label class="control-label" for="inputUsername" ><font size="3" face="Arial" color="white">Kullanýcý Ad</font></label>
+    
+    <div class="controls">
+      <input type="text" id="inputUsername" name="username"   placeholder="Kullanýcý Ad">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputad"><font size="3" face="Arial" color="white">Ad</font></label>
+    <div class="controls">
+      <input type="text" id="inputAd" name="ad"   placeholder="Ad">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputSoyad"><font size="3" face="Arial" color="white">Soyad</font></label>
+    <div class="controls">
+      <input type="text" id="inputSoyad" name="soyad"   placeholder="Soyad">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputDtarih"><font size="3" face="Arial" color="white">D.Tarihi</font></label>
+    <div class="controls">
+      <input type="date" id="inputDtarih" name="dtarih"   placeholder="D.Tarih">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEposta"><font size="3" face="Arial" color="white">E-Posta</font></label>
+    <div class="controls">
+      <input type="email" id="inputEposta" name="eposta"   placeholder="E-Posta">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputResim"><font size="3" face="Arial" color="white">Resim</font></label>
+    <div class="controls">
+      <input type="file" id="inputResim" name="resim"   placeholder="Resim">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputResim"><font size="3" face="Arial" color="white">Ünvan</font></label>
+    <div class="controls">
+      <label class="radio">
+        <input type="radio" name="box1" value="ogretmen"> <font size="3" face="Arial"   color="white">Öðretmen</font>
+      </label>
+      <label class="radio">
+        <input type="radio" name="box2" value="ogrenci"> <font size="3" face="Arial"   color="white">Öðrenci</font>
+      </label>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        <input type="checkbox" name="box1" value="remember"> <font size="3" face="Arial"   color="white">Remember me</font>
+      </label>
+      <button type="submit" class="btn">Sign in</button>
+    </div>
+  </div>
+</form>
+  <script src="http://code.jquery.com/jquery.js"></script>
+    <script   src="js/bootstrap.min.js"></script>
+  </body>
+</html>
